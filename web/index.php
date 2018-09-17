@@ -19,7 +19,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('index.twig',array('title'=>'HomePage***'));
+  return $app['twig']->render('index.twig',array('title'=>'English Premier League'));
 });
 
 $app->run();
